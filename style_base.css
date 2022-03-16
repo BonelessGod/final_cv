@@ -235,7 +235,7 @@ footer{
     align-content: flex-start;
     /* border-radius: 15px 15px 0px 0px; */
     padding-bottom: 5%;
-    position: absolute;
+    position: sticky;
     bottom: 0;
 }
 
