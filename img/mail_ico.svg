@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="102.841mm"
+   height="62.841mm"
+   viewBox="0 0 102.841 62.841"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="mail_ico.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.0809568"
+     inkscape:cx="145.70426"
+     inkscape:cy="170.68213"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid836"
+       originx="-8.5794998"
+       originy="-8.5794999" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-8.5795,-8.5795)">
+    <g
+       inkscape:label="Calque 1"
+       id="layer1-7"
+       transform="translate(-30,-130)">
+      <rect
+         style="font-variation-settings:'wdth' 81.7, 'wght' 700;opacity:0.983278;fill:#ffe680;stroke:#000000;stroke-width:2.841;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0.529134;stroke-opacity:1;paint-order:stroke fill markers"
+         id="rect1033"
+         width="100"
+         height="60"
+         x="40"
+         y="140"
+         ry="1.421085e-14" />
+      <path
+         style="fill:#ffdd55;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 140,200 90,160 39.999999,200 H 140"
+         id="path1009" />
+      <path
+         style="fill:#ffd42a;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 39.999999,140 50,40 L 140,140 H 39.999999"
+         id="path894" />
+    </g>
+  </g>
+</svg>

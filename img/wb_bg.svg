@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg850"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="wb_bg.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview852"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.76435185"
+     inkscape:cx="52.986069"
+     inkscape:cy="42.519685"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs847" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-90.884614,-137.26923)">
+    <g
+       inkscape:label="Calque 1"
+       id="layer1-3"
+       transform="translate(30.884616,87.269231)">
+      <path
+         style="fill:#5fbcd3;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 59.999998,140 v 10 H 69.999999 L 160,59.999998 V 50 h -10 l -90.000002,90"
+         id="path883" />
+      <path
+         style="fill:#d7eef4;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 59.999998,140 c 0,0 0,-10 20,-30 C 100,89.999999 110,89.999999 110,89.999999 c 0,0 10,0 20,-10.000001 C 140,69.999999 150,50 150,50 h 10 v 9.999998 c 0,0 -10,20 -20,30.000001 C 130,100 120,100 120,100 c 0,0 -10,0 -30.000001,20 -20,20 -20,30 -20,30 H 59.999998 v -10"
+         id="path1031" />
+      <circle
+         style="font-variation-settings:'wdth' 81.7, 'wght' 700;opacity:0.983278;fill:#87cdde;stroke:none;stroke-width:2.84099;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dashoffset:0.529134;paint-order:stroke fill markers"
+         id="path1520"
+         cx="90"
+         cy="70"
+         r="10" />
+      <circle
+         style="font-variation-settings:'wdth' 81.7, 'wght' 700;opacity:0.983278;fill:#d7eef4;stroke:none;stroke-width:2.84099;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dashoffset:0.529134;paint-order:stroke fill markers"
+         id="path1522"
+         cx="130"
+         cy="130"
+         r="10" />
+    </g>
+  </g>
+</svg>
