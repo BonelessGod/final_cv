@@ -1,27 +1,62 @@
-// When the user scrolls down 50px from the top of the document, resize the header's font size
+// Ce script est une adaptation du script de w3school pour réduire le header lorsque l'utilisateur descend sur la page
+// Effectuer un scrolling sur la page appelle la fonction scrollFunction
+
 window.onscroll = function() {scrollFunction()};
 
-const photoCSSAttribute = document.getElementById("photo"), 
-    photoOriginalHeight = getComputedStyle(photo, null).height,
-    photoOriginalWidth = getComputedStyle(photo, null).width;
+// Les deux variables ci-dessous définissent le nombre de pixel descendu avant de réduite le header.
+// Le premier est destiné aux petits écrans (moins de 1024px de largeur) et le deuxième pour les plus grand (plus de 1024px)
 
+const scrollShrinkCap = 30;
+const scrollShrinkCapDesktop = 30;
 
-const photoScrolledHeight = photoOriginalHeight.replace(/px/, "") * 0.7 + "px";
-const photoScrolledWidth = photoOriginalWidth.replace(/px/, "") * 0.6 + "px";
+// Début de la fonction scrollFunction
 
 function scrollFunction() {
-  if (document.documentElement.scrollTop > 30) {
 
-    document.getElementById("photo_info").style.height = photoScrolledHeight;
-    document.getElementById("photo").style.width = photoScrolledWidth;
+/* 
+    J'ai imbriqué deux conditions: 
     
-    document.getElementById("titleName").style.fontSize = "large";
+    - La première permet de cibler selon la taille d'écran
+    - La deuxième, imbriqué dans la première, permet 
+    de prendre en compte le scrolling dans la page
+    
+    Le résultat de la condition est la modification de style des éléments du header selon la circonstance
+*/
+
+  if(window.matchMedia("(min-width: 1024px)").matches) {
+
+    if (document.documentElement.scrollTop >= scrollShrinkCapDesktop){
+
+      document.getElementById("photo").style.width = "10%";
+      document.getElementById("titleName").style.transform = "scale(0.8)";
+      document.getElementById("photo").style.transform = "rotate(360deg)";
+      document.getElementById("photo").style.transition = "300ms";
+
+    } else {
+
+      document.getElementById("photo").style.width = "20%";
+      document.getElementById("titleName").style.transform = "scale(1)";
+      document.getElementById("photo").style.transform = "";
+
+    }
 
   } else {
-    
-    document.getElementById("photo_info").style.height = photoOriginalHeight;
-    document.getElementById("photo").style.width = photoOriginalWidth;
-    document.getElementById("titleName").style.fontSize = "xx-large";
+
+    if (document.documentElement.scrollTop > scrollShrinkCap){
+
+      document.getElementById("photo").style.width = "25%";
+      document.getElementById("titleName").style.transform = "scale(0.8)";
+      document.getElementById("photo").style.transform = "rotate(360deg)";
+      document.getElementById("photo").style.transition = "300ms";
+
+    } else {
+
+      document.getElementById("photo").style.width = "50%";
+      document.getElementById("titleName").style.transform = "scale(1)";
+      document.getElementById("photo").style.transform = "";
+
+    }
 
   }
+
 }
