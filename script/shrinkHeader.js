@@ -5,8 +5,8 @@ const photoCSSAttribute = document.getElementById("photo"),
     photoOriginalWidth = getComputedStyle(photo, null).width,
     photoOriginalHeight = getComputedStyle(photo, null).height;
 
-const photoScrolledWidth = photoOriginalWidth.replace(/px/, "") * 0.7 + "px";
-const photoScrolledHeight = photoOriginalHeight.replace(/px/, "") * 0.6 + "px";
+const photoScrolledWidth = photoOriginalWidth.replace(/px/, "") * 0.6 + "px";
+const photoScrolledHeight = photoOriginalHeight.replace(/px/, "") * 0.7 + "px";
 
 function scrollFunction() {
   if (document.documentElement.scrollTop > 30) {
