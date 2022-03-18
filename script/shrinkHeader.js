@@ -25,18 +25,18 @@ function scrollFunction() {
 
   if(window.matchMedia("(min-width: 1024px)").matches) {
 
-    if (document.documentElement.scrollTop >= scrollShrinkCapDesktop){
+    if (document.documentElement.scrollTop > scrollShrinkCapDesktop){
 
-      document.getElementById("headerContentImage").style.width = "10%";
-      document.getElementById("headerContentTitleZone").style.transform = "scale(0.8)";
-      document.getElementById("headerContentImage").style.transform = "rotate(360deg)";
-      document.getElementById("headerContentImage").style.transition = "300ms";
+      $("#headerContentImage").css("width", "10%");
+      $("#headerContentTitleZone").css("transform", "scale(0.8)");
+      $("#headerContentImage").css("transform", "rotate(360deg)");
+      $("#headerContentImage").css("transition", "300ms");
 
     } else {
 
-      document.getElementById("headerContentImage").style.width = "20%";
-      document.getElementById("headerContentTitleZone").style.transform = "scale(1)";
-      document.getElementById("headerContentImage").style.transform = "";
+      $("#headerContentImage").css("width", "20%");
+      $("#headerContentTitleZone").css("transform", "scale(1)");
+      $("#headerContentImage").css("transform", "");
 
     }
 
@@ -44,16 +44,16 @@ function scrollFunction() {
 
     if (document.documentElement.scrollTop > scrollShrinkCap){
 
-      document.getElementById("headerContentImage").style.width = "25%";
-      document.getElementById("headerContentTitleZone").style.transform = "scale(0.8)";
-      document.getElementById("headerContentImage").style.transform = "rotate(360deg)";
-      document.getElementById("headerContentImage").style.transition = "300ms";
+      $("#headerContentImage").css("width", "25%");
+      $("#headerContentTitleZone").css("transform", "scale(0.8)");
+      $("#headerContentImage").css("transform", "rotate(360deg)");
+      $("#headerContentImage").css("transition", "300ms");
 
     } else {
 
-      document.getElementById("headerContentImage").style.width = "50%";
-      document.getElementById("headerContentTitleZone").style.transform = "scale(1)";
-      document.getElementById("headerContentImage").style.transform = "";
+      $("#headerContentImage").css("width", "50%");
+      $("#headerContentTitleZone").css("transform", "scale(1)");
+      $("#headerContentImage").css("transform", "");
 
     }
 
