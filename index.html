@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_base.css">
+    <link rel="stylesheet" media="only screen and (min-width:1024px)" href="style_desktop.css">
     <title>Mon CV - Kilian DUCLOS</title>
 </head>
 
@@ -16,7 +17,7 @@
 
         <div id="headerShrink">
 
-        <div class="photo_info">
+        <div id="photo_info">
 
             <div id="photo">
 
@@ -38,17 +39,53 @@
         </div>
 
         <nav class="navBar">
-            <ul>
-                <li id="dot" onclick="currentSlide(1)">Expériences</li>
-                <li id="dot" onclick="currentSlide(2)">Diplomes</li>
-                <li id="dot" onclick="currentSlide(3)">Compétences</li>
-                <li id="dot" onclick="currentSlide(4)">A propos</li>
-            </ul>
+
+                <a id="dot" onclick="currentSlide(1)">A propos</a>
+                <a id="dot" onclick="currentSlide(2)">Expériences</a>
+                <a id="dot" onclick="currentSlide(3)">Diplomes</a>
+                <a id="dot" onclick="currentSlide(4)">Compétences</a>
+                
+            
         </nav>
 
     </header>
 
 <div class="slideshow-container">
+
+    <div class="mySlides fade" style="display: block;">
+     
+        <div id="about" class="zone">
+
+            <h1>A propos de moi</h1>
+
+            <p class="articleText">
+                Bonjour à vous et bienvenue sur ce site web. Je me présente, Kilian DUCLOS, et j'ai <span id="aboutAge"></span> ans.
+                Après une première expérience sur un poste mélant comptabilité et informatique, c'est une nouvelle page que je 
+                souhaite ouvrir dans ma vie professionnelle. 
+            </p>
+            <p class="articleText">
+                C'est sur le monde du développement web que c'est jeté mon dévolu. Un monde qui me paraissait innacessible, mais que 
+                j'arrive désormais à toucher du bout des doigts. Mes connaissances sur le domaine sont encore à leurs balbutiements, et 
+                le chemin à parcourir est encore long. Pour y palier, j'essaie de me démarquer avec mes capacités d'adaptation et d'apprentissage,
+                mon aisance avec l'informatique en général, ainsi qu'une pincée de curiosité et de créativité.
+            </p>
+            <p class="articleText">
+                Pour parcourir ce chemin, je souhaite me former en alternance, et pour ça j'ai besoin de vous! Et je serais plus qu'enchanté de 
+                rejoindre votre équipe afin de vous montrer de quoi je suis capable.
+            </p>
+
+            <h2>Passions</h2>
+
+            <ul>
+                <li>Skateboard</li>
+                <li>Zythologie</li>
+                <li>TTRPG</li>
+            </ul>
+
+
+        </div>
+        
+      </div>
 
     <div class="mySlides fade">
       
@@ -270,44 +307,8 @@
       
     </div>
 
-    <div class="mySlides fade" style="display: block;">
-     
-        <div id="about" class="zone">
-
-            <h1>A propos de moi</h1>
-
-            <p class="articleText">
-                Bonjour à vous et bienvenue sur ce site web. Je me présente, Kilian DUCLOS, et j'ai <span id="aboutAge"></span> ans.
-                Après une première expérience sur un poste mélant comptabilité et informatique, c'est une nouvelle page que je 
-                souhaite ouvrir dans ma vie professionnelle. 
-            </p>
-            <p class="articleText">
-                C'est sur le monde du développement web que c'est jeté mon dévolu. Un monde qui me paraissait innacessible, mais que 
-                j'arrive désormais à toucher du bout des doigts. Mes connaissances sur le domaine sont encore à leurs balbutiements, et 
-                le chemin à parcourir est encore long. Pour y palier, j'essaie de me démarquer avec mes capacités d'adaptation et d'apprentissage,
-                mon aisance avec l'informatique en général, ainsi qu'une pincée de curiosité et de créativité.
-            </p>
-            <p class="articleText">
-                Pour parcourir ce chemin, je souhaite me former en alternance, et pour ça j'ai besoin de vous! Et je serais plus qu'enchanté de 
-                rejoindre votre équipe afin de vous montrer de quoi je suis capable.
-            </p>
-
-            <h2>Passions</h2>
-
-            <ul>
-                <li>Skateboard</li>
-                <li>Zythologie</li>
-                <li>TTRPG</li>
-            </ul>
-
-
-        </div>
-        
-      </div>
+    
   
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
   
@@ -316,7 +317,7 @@
 
 
 
-    <footer>
+    <footer id="footer">
 
         <div class="footerContact">
             <p>Me contacter:</p>
