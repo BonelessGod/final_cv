@@ -27,16 +27,16 @@ function scrollFunction() {
 
     if (document.documentElement.scrollTop >= scrollShrinkCapDesktop){
 
-      document.getElementById("photo").style.width = "10%";
-      document.getElementById("titleName").style.transform = "scale(0.8)";
-      document.getElementById("photo").style.transform = "rotate(360deg)";
-      document.getElementById("photo").style.transition = "300ms";
+      document.getElementById("headerContentImage").style.width = "10%";
+      document.getElementById("headerContentTitleZone").style.transform = "scale(0.8)";
+      document.getElementById("headerContentImage").style.transform = "rotate(360deg)";
+      document.getElementById("headerContentImage").style.transition = "300ms";
 
     } else {
 
-      document.getElementById("photo").style.width = "20%";
-      document.getElementById("titleName").style.transform = "scale(1)";
-      document.getElementById("photo").style.transform = "";
+      document.getElementById("headerContentImage").style.width = "20%";
+      document.getElementById("headerContentTitleZone").style.transform = "scale(1)";
+      document.getElementById("headerContentImage").style.transform = "";
 
     }
 
@@ -44,16 +44,16 @@ function scrollFunction() {
 
     if (document.documentElement.scrollTop > scrollShrinkCap){
 
-      document.getElementById("photo").style.width = "25%";
-      document.getElementById("titleName").style.transform = "scale(0.8)";
-      document.getElementById("photo").style.transform = "rotate(360deg)";
-      document.getElementById("photo").style.transition = "300ms";
+      document.getElementById("headerContentImage").style.width = "25%";
+      document.getElementById("headerContentTitleZone").style.transform = "scale(0.8)";
+      document.getElementById("headerContentImage").style.transform = "rotate(360deg)";
+      document.getElementById("headerContentImage").style.transition = "300ms";
 
     } else {
 
-      document.getElementById("photo").style.width = "50%";
-      document.getElementById("titleName").style.transform = "scale(1)";
-      document.getElementById("photo").style.transform = "";
+      document.getElementById("headerContentImage").style.width = "50%";
+      document.getElementById("headerContentTitleZone").style.transform = "scale(1)";
+      document.getElementById("headerContentImage").style.transform = "";
 
     }
 
