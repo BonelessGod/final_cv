@@ -3,31 +3,6 @@
     src: url("fonts/Rubik-Regular.ttf") format("truetype");
 }
 
-html {
-    --headerAndFooterColor : #000000;
-    --navigationBarColor : #e5d76b;
-    --contentColor: #e4dfd9;
-    --backgroundColor: #7e807d;
-}
-
-body, html{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-html{
-    background-color: var(--backgroundColor);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: center top;
-    background-size: 125%;
-    scroll-behavior: smooth;
-}
-
 /* HEADER */
 
 header{
@@ -336,17 +311,79 @@ footer a:hover{
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {transform: rotateY(0deg)}
+  to {transform: rotateY(360deg)}
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {transform: rotateY(0deg)}
+  to {transform: rotateY(360deg)}
+}
+
+.projetBloc {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.projetImg {
+    width: 100%;
+}
+
+.projetImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.projetTitle {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--headerAndFooterColor);
+    color: white;
+}
+
+.projetText {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.projetDescription {
+    background-color: var(--navigationBarColor);
+}
+
+.projetTechno {
+    background-color: var(--headerAndFooterColor);
+    color: white;
+}
+
+.projetLink{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: var(--navigationBarColor);
+
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    margin-top: 1rem;
 }

@@ -1,3 +1,12 @@
+<?php
+
+$bdd = new PDO('mysql:host=localhost;dbname=portfolio_projet', "root", "");
+
+$query = $bdd->query('SELECT * FROM projet');
+$results = $query->fetchAll();
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,6 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_global.css">
     <link rel="stylesheet" href="style_base.css">
     <link rel="stylesheet" media="only screen and (min-width:1024px)" href="style_desktop.css">
     <title>Mon CV - Kilian DUCLOS</title>
@@ -35,7 +45,7 @@
         <nav class="headerNavigationBar">
 
             <a id="dot" onclick="currentSlide(1)">A propos</a>
-            <a id="dot" onclick="currentSlide(2)">Expériences</a>
+            <a id="dot" onclick="currentSlide(2)">Projet</a>
             <a id="dot" onclick="currentSlide(3)">Diplomes</a>
             <a id="dot" onclick="currentSlide(4)">Compétences</a>
 
@@ -89,11 +99,54 @@
 
         <div class="sectionContent fade">
 
+
+            <div class="projet">
+
+            <h1>Projets</h1>
+
+            <?php 
+          
+          foreach ($results as $line) {
+              # code...
+         
+      
+            ?> 
+
+            <div class="projetBloc">
+
+                <div class="projetImg">
+
+                    <img src=<?=$line["img"] ?>  alt="image projet">
+
+                </div>
+
+                <div class="projetInfo">
+
+                    <h2 class="projetTitle"><?=$line["name"]?></h2>
+
+                    <p class="projetDescription projetText"><?=utf8_encode($line["description"])?></p>
+
+                    <p class="projetTechno projetText"><?=$line["techno"]?></p>
+                    
+                    <div class="projetLink">
+
+                        <a href="<?=$line["link"]?>" class="button">Lien</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <?php } ?>
+
+            </div>
+
             <div class="zone">
 
-                <h1>Mes expérience professionnelle</h1>
+                <!-- <h1>Mes expérience professionnelle</h1> -->
 
-                <ul>
+                <!-- <ul>
                     <li>
                         <ul>
                             <li>
@@ -156,7 +209,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
 
