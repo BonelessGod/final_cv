@@ -1,6 +1,20 @@
 <?php
 
-$bdd = new PDO('mysql:localhost;dbname=portfolio_projet', "root", "");
+
+if(!empty($_POST)) {
+
+    $bdd = new PDO('mysql:localhost;dbname=portfolio_projet', "root", "");
+    var_dump($_POST);
+
+    $query = $bdd->prepare('INSERT INTO portfolio_projet.projet (name, description, techno, link, img) VALUES (?,?,?,?,?)');
+
+    $query->execute(array($_POST['name'], $_POST['description'], $_POST['techno'], $_POST['link'], $_POST['img']));
+    
+    $query->debugDumpParams();
+    print_r($query->errorInfo());
+
+}
+
 
 ?>
 
@@ -16,7 +30,7 @@ $bdd = new PDO('mysql:localhost;dbname=portfolio_projet', "root", "");
 </head>
 <body>
 
-<div class="form">
+<form action="" method="POST" class="form">
 
     <div class="formPart">
 
@@ -58,7 +72,7 @@ $bdd = new PDO('mysql:localhost;dbname=portfolio_projet', "root", "");
         <button type="submit" id="submit" class="formIndication button">ENVOYER</button>
     </div>
     
-</div>
+</form>
     
 </body>
 </html>
