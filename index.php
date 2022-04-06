@@ -54,6 +54,8 @@ $results = $query->fetchAll();
 
     </header>
 
+    <div class="headerBlock"></div>
+
     <div class="section">
 
         <div class="sectionContent fade" style="display: block;">
